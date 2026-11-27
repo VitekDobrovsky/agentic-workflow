@@ -5,7 +5,6 @@
 <Jedna nebo dvě věty: co projekt dělá a co do něj nepatří.>
 
 Architektura projektu: viz @docs/ARCHITECTURE.md
-Požadavky: `docs/REQUIREMENTS.md`. Komponenty: `docs/components/`. Důvody rozhodnutí: `docs/DECISIONS.md`. Aktuální práce: `docs/TASKS.md`. Tyto soubory si přečti, až když je potřebuješ.
 
 ## Klíčová rozhodnutí (neměnit bez domluvy)
 - <Rozhodnutí, která musí agent znát vždy.>

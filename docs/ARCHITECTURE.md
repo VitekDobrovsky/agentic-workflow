@@ -1,32 +1,24 @@
 # Architektura projektu
 
-Přehled toho, jak projekt funguje uvnitř. Soubor se načítá v každém sezení, proto je krátký. Jak funguje jednotlivá komponenta, popisuje její dokument v `components/`.
+Přehled toho, jak projekt funguje uvnitř. Soubor se načítá v každém sezení, proto je krátký. Podrobnosti popisují specy v `specs/`.
 
 ## Přehled
 
-<Stručný popis a diagram hlavních částí.>
+<Stručný popis a diagram hlavních částí projektu a toků mezi nimi. Podrobnosti jsou ve specech, tady na ně jen odkaž.>
 
-## Komponenty
+## Specy
 
-Kde je komponenta v kódu a kde je její dokument. Komponenta, která je zatím jen navržená, má u názvu značku `(návrh, T-xxx)`.
+Co který spec pokrývá a kde je jeho kód. Spec, který je zatím jen navržený, má u názvu `(návrh T-xxx)`.
 
-| Komponenta | Kód | Dokument |
+| Spec | Co pokrývá | Kód |
 |---|---|---|
-| <název> | `<cesta>` | [<komponenta>](components/<komponenta>.md) |
-
-## Toky mezi komponentami
-
-<Hlavní toky přes víc komponent a data, která si komponenty předávají. Tok uvnitř jedné komponenty patří do jejího dokumentu.>
+| [<název>](specs/<spec>.md) | <jedna věta> | `<cesta>` |
 
 ## Externí závislosti
 
-Služby, API a systémy mimo projekt. U každé: co projekt používá nebo poskytuje, odkaz na její dokumentaci a jak s ní projekt pracuje: limity, opakování, mapování na vlastní stavy a reakce na chyby a výpadky.
+Služby, API a systémy mimo projekt. U každé jen to, co ji projekt používá nebo co jí poskytuje, a odkaz na její dokumentaci. Jak s ní projekt zachází, popisuje spec toku, který ji používá. Závislost, která je zatím jen navržená, má u názvu `(návrh T-xxx)`, změna existující má pod sebou blok `> **návrh T-xxx:** …`.
 
-- <název> ([dokumentace](<odkaz>)): <jak s ní projekt pracuje>.
-
-## Konfigurace
-
-<Co se nastavuje pro konkrétní prostředí nebo nasazení. Podrobnosti jsou v dokumentech komponent.>
+- <název> ([dokumentace](<odkaz>)): <co ji projekt používá nebo co jí poskytuje>.
 
 ## Otevřené otázky
 
